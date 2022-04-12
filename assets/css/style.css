@@ -19,7 +19,11 @@ body {
   justify-content: flex-start;
   text-align: left;
   color: var(--white);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(https://rashintravel.com/wp-content/uploads/2021/01/Apadana-Palace.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(3, 3, 3, 0.517)), to(rgba(3, 3, 3, 0.363))), url(https://raw.githubusercontent.com/neiman924/Portfolio/main/assets/img/background/background.jpg);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header{
@@ -63,7 +67,6 @@ main{
   top: 0;
   left: 0;
   background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.9);
   overflow-x: hidden;
   transition: 0.5s;
 }
@@ -82,14 +85,13 @@ main{
   font-size: 36px;
   color: #ffffff;
   display: block;
-  transition: 0.3s;
+  transition:cubic-bezier(0.075, 0.82, 0.165, 1);;
   font-weight: bolder;
 }
 
 .overlay a:hover, .overlay a:focus {
   color: #7575757c;
   transform: scale(1.09);
-  transition: margin-right 2s ease-in-out;
   font-weight: bold;
 }
 
@@ -136,7 +138,7 @@ main p{
 }
 .code-card .card-header{
   border-radius: 8px;
-  transition: all 0.5s ease-in-out;
+  /* transition: all 0.5s ease-in-out; */
 }
 .code-card:hover , 
 .code-card:hover .card-header
@@ -145,7 +147,7 @@ main p{
   rgba(232,102,236,1), 0 0 15px
   rgba(232,102,236,1);
   transform: scale(1.05);
-  transition: margin-right 2s ease-in-out;
+  /* transition: margin-right 2s ease-in-out; */
 }
 
 .products {
@@ -195,9 +197,9 @@ pre{
 }
 pre:hover{
   transform: scale(1.03);
-  transition: margin-right 2s;
+  /* transition: margin-right 2s;
   transition: margin-right 2s ease-in-out;
-  transition-timing-function: linear;
+  transition-timing-function: linear; */
   box-shadow: inset 0px 0px 8px   
   rgb(255, 255, 255), 0 0 15px
   rgba(232,102,236,1);
