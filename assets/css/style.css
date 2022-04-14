@@ -232,7 +232,7 @@ flex-direction: column;
 .aside1{
   margin-top: 2%;
   background-color: orange;
-  padding: 150px;
+  padding: 7%;
   float: right;
   width: 40%;
   border: 15px solid rgb(0, 0, 0);
@@ -241,17 +241,21 @@ flex-direction: column;
 }
 .info{
   font-family:'Courier New', Courier, monospace;
-  margin-top: 5%;
+  margin-top: 3%;
   text-align: left;
   padding: -1%;
+}
+.info h1{
+  font-size: 500%;
 }
 .info h5{
   text-align: justify;
   font-weight: 100;
+  font-size: 80%;
 }
 .info h2{
-font-size: 50px;
+font-size: 300%;
 }
 .info h3{
-  font-size: 35px;
+  font-size: 140%;
 }
