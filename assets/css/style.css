@@ -1,7 +1,11 @@
 * {
   box-sizing: border-box;
   /* background-color: black; */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
+
 
 :root {
   --blue: #1e90ff;
@@ -19,25 +23,17 @@ body {
   justify-content: flex-start;
   text-align: left;
   color: var(--white);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(3, 3, 3, 0.517)), to(rgba(3, 3, 3, 0.363))), url(https://raw.githubusercontent.com/neiman924/Portfolio/main/assets/img/background/background.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #000;
+}
+.bg{
+    margin-top: 4.1%;
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index: 0;
+    opacity: 0.25;
 }
 
-header{
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: #ffffff;
-  opacity: 0.81;
-  top: 0;
-  position:fixed;
-  width: 100%;
-  justify-content: space-around;
-  background-color: black;
-}
-header li{
-  display: inline-block;
-}
 
 span{
   display: block;
@@ -58,17 +54,35 @@ span p {
 }
 main{
   margin-top: 10%;
-  margin-left: 2.4%;
-  position: relative;;
+  position: relative;
 }
-
+main h1{
+  font-family:'Courier New', Courier, monospace;
+  display: inline;
+  font-size: 80px;
+  color: #7200ff;  
+  text-shadow: 3px 3px 3px #000000;
+}
+main h2{
+  font-family: 'Courier New', Courier, monospace;
+  display: inline;
+  font-size: 80px;
+  color: orange ;
+  text-shadow: 3px 3px 3px #010101;
+}
+main h3{
+  font-family:'Courier New', Courier, monospace;
+  display: inline;
+  font-size: 80px;
+  color: #ffffff;  
+  text-shadow: 3px 3px 3px #010101;
+}
 .overlay {
   height: 100%;
   width: 0;
   position: fixed;
   z-index: 2;
   top: 0;
-  left: 0;
   background-color: rgb(0,0,0);
   background-color: rgba(0,0,0, 0.9);  
   overflow-x: hidden;
@@ -103,16 +117,10 @@ main{
 
 .overlay .closebtn{
   position:absolute;
-  margin-left: 2%;
   font-size: 60px;
   color: #7200ff;
 }
 
-.row{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
 .column{
 display: flex;
 flex-direction: column;
@@ -140,62 +148,16 @@ flex-direction: column;
 }
 
 .products {
-  display:flex;
-  flex-flow: wrap; 
-  flex: 3;
-  padding: 0 20% ;
-  margin-bottom: 25px;
+  width: 100%;
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
-  justify-content:space-evenly;
   align-items: flex-start;
   text-shadow: 0 0 3px #010101;
+  background-color: #000;
 }
 
-/* TODO: Add properties to the cards to achieve the required look */
-.card {
-  border-width: 1px;
-  border-color: #fff;
-  padding: 10px;
-  flex: 0 0 300px;
-  text-shadow: 0 0 3px #070707ee;
-  box-shadow: 0 -10 5px #ffffffee;
-  border-radius: 10px;
-  border-style: dashed;
-  margin-bottom: 50px;
-}
 
-.card header {
-  position: relative;
-  padding: 20px;
-  border-radius: 20px;
-  border-color: #fff;
-  border-style:groove;
-  border-radius: 10px;
-  border-width: 1px;
-}
-/* .card-header{
-  position: relative;
-  margin-top: -20px;
-} */
-
-pre{
-  font-size: x-small;
-  color: #fff;
-  border-radius: 10px;
-}
-pre:hover{
-  transform: scale(1.03);
-  /* transition: margin-right 2s;
-  transition: margin-right 2s ease-in-out;
-  transition-timing-function: linear; */
-  box-shadow: inset 0px 0px 8px   
-  rgb(255, 255, 255), 0 0 15px
-  rgba(232,102,236,1);
-  -moz-user-select: all;
-  -webkit-user-select: all;
-  -ms-user-select: all;
-  user-select: all;
 }
 @media screen and (max-height: 450px) {
   .overlay a {font-size: 20px}
@@ -204,4 +166,45 @@ pre:hover{
   top: 15px;
   right: 35px;
   }
+}
+
+.blackbox{
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  border: 15px solid rgb(0, 0, 0);
+}
+
+.hero-text {
+  max-width: 70%;
+  margin-right: auto;
+  text-align: center;
+  display:inline;
+}
+.button-hero.black {
+  padding: 13px 45px;
+  border-style: solid;
+  margin-left: 2%;
+  border-width: 2px;
+  border-color: #fff;
+  background-color: rgba(32, 34, 46, 0);
+  background-image: none;
+  box-shadow: 4px 4px 15px -5px #000;
+  opacity: 1;
+}
+.button-hero {
+    display: inline-block;
+    padding: 15px 40px;
+    border-radius: 50px;
+    background-image: linear-gradient(180deg, #7200ff, #2b0050);
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.margin-50px {
+  margin-top: 8%;
+  margin-bottom: 8%;
 }

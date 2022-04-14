@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Portfolio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="./assets/css/style.css">
 
 </head>
 <body>
-
 <nav>
 <div id="myNav" class="overlay">
   <a href="javascript:void(0)" class="closebtn" style="float: left;" onclick="closeNav()">&times;</a>
@@ -18,94 +18,38 @@
     <a href="#">Contact</a>
   </div>
 </div>
+<img class="bg" src="./assets/img/background/background.jpg">
 
 </nav>
 
 <span onclick="openNav()">&#9776; M E N U</span>
-
-<main class="row">
-
-  <div class="products">
-    <section class="card">
-      <header class="code-card">Flexbox Row</header>
-      <p>Use these code three properties to create a Flexboxrow layout.</p>
-      <pre class="linear-gradient-background">
-.row
-{
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-}
-      </pre>
-    </section>
-    <section class="card">
-      <header class="code-card">Flexbox Column</header>
-      <p>Use this to create a Flexboxcolumn layout.</p>
-      <pre class="linear-gradient-background">
-.column
-{
-display: flex;
-flex-direction: column;
-}
-      </pre>
-    </section>
-    <section class="card">
-      <header class="code-card">CSS Grid layout</header>
-      <p>Build a 12-column layout using CSS Grid</p>
-      <pre class="linear-gradient-background">
-.grid
-{
-display: grid;
-width: 100%;
-grid-template-columns: repeat(12, 1fr);
-}
-      </pre>
-    </section>
-    <section class="card">
-      <header class="code-card">Linear Gradients</header>
-      <p>This will create a background linear gradient from top to bottom.</p>
-      <pre class="linear-gradient-background">
-.linear-gradient-background
-{
-background-image: linear-gradient(
-rgba(232, 102, 236, 0.3) 0%,
-rgba(232, 102, 236, 0.6) 100%
-);
-}
-      </pre>
-    </section>
-    <section class="card">
-      <header class="code-card">Box Transition Glow</header>
-      <p>Use transition and box shadows to glow on hover.</p>
-      <pre class="linear-gradient-background">
-.code-card:hover , 
-.code-card:hover .card-header
-{
-box-shadow: inset 0px 0px 8px 
-rgba(232,102,236,1), 0 0 15px
-rgba(232,102,236,1);
-transform: scale(1.05);
-transition: margin-right 2s ease-in-out;
-}
-      </pre>
-    </section>
-    <section class="card">
-      <header class="code-card">Overlay Card with Title</header>
-      <p>Use position properties and negative margines to raise elements higher than their natural starting point.</p>
-      <pre class="linear-gradient-background">
-.card header 
-{
-position: relative;
-padding: 20px;
-border-radius: 20px;
-border-color: #fff;
-border-style:groove;
-border-radius: 10px;
-border-width: 1px;
-}
-      </pre>
-    </section>
+<div style="margin-bottom: 5%;"></div>
+<main>
+<div class="hero-text">
+  <div>
+          <h3>Hi!🤘 I design </h3>
+          <h1>Websites!</h1><br>
+          <h2>Frontend &amp;&nbsp;Backend.</h2>
   </div>
+      
+  <div class="margin-50px">
+    <div>
+      <!-- <iframe src=" " name="iframe_a" height="100%" width="100%" title="Iframe Example"></iframe> -->
+      <a href="./assets/doc/Resume.pdf" target="iframe_a" class="button-hero">Download Resume</a>
+      <a href="#" class="button-hero black">View Projects</a>
+    </div>
+  </div>
+
+<br>
+ <div class="blackbox">
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+ </div>
 </main>
 <script>
 function openNav() {
