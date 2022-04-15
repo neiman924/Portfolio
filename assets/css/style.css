@@ -244,6 +244,7 @@ flex-direction: column;
   margin-top: 3%;
   text-align: left;
   padding: -1%;
+  margin-bottom: 15%;
 }
 .info h1{
   font-size: 500%;
@@ -258,4 +259,26 @@ font-size: 300%;
 }
 .info h3{
   font-size: 140%;
+}
+
+.purpleboxes{
+  display:inline-table;
+  background-color:#7200ff;
+  justify-content:space-between;
+  padding: 2%;
+  width: 2%;
+  border-radius: 5%;
+  font-size: small;
+  margin-left: 2%;
+}
+.purpleboxes h3{
+  font-size: small;
+}
+.purpleboxes h6{
+  text-indent: 0%;
+  margin-left: 0%;
+}
+.purpleboxes:hover{
+  transform: scale(1.2);
+  transition: transform .5s;
 }
