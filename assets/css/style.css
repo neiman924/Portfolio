@@ -280,6 +280,7 @@ font-size: 300%;
   grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto auto;
   grid-template-rows: auto auto;
+  margin-bottom: 10%;
 }
 .futureproject{
   font-family: 'Courier New', Courier, monospace;
@@ -313,4 +314,87 @@ font-size: 300%;
 }
 .futureproject img{
   background-color: rgba(255, 255, 255, 0.267);
+}
+
+.inforickout{
+  align-items: center;
+  font-family:'Courier New', Courier, monospace;
+  margin-top: 3%;
+  text-align: left;
+  margin-bottom: 25%;
+
+}
+
+.text-input {
+  width: 30%;
+  max-width: 30%;
+}
+
+.text-input, select {
+  padding: 1%;
+  outline: none;
+  border: 1.2px solid #b9C6ae;
+}
+
+.text-input:hover, .checkbox:hover, 
+select:hover, button:hover {
+  box-shadow: 0 0 5px #999;
+}
+
+/* What does this pseudo-class mean? */
+.text-input:focus {
+  border-right-width: 5px;
+}
+form{
+  margin-left: 30%;
+  height: 38px;
+  padding: 8px 12px;
+  color: #999;
+}
+.text-field {
+  height: 50px;
+  margin-bottom: 20px;
+  border-color: hsla(0, 0%, 100%, 0.06);
+  border-radius: 10px;
+  background-color: #1f1f1f;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(255, 255, 255);
+  width: 60%;
+}
+.field-label-form {
+  margin-top: 0px;
+  padding-top: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  height: 38px;
+}
+
+
+
+.footer {
+  padding: 70px 5% 20px;
+  background-position: 0px 0px;
+  background-size: auto;
+  background-repeat: repeat;
+  background-attachment: scroll;
+}
+.container {
+  display: block;
+  max-width: 100%;
+  margin-right: 0px;
+  margin-left: 0px;
+  text-align: left;
+}
+.footer-grid {
+  display: -ms-grid;
+  display: grid;
+  max-width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.footer a {
+  text-decoration: none;
+  color: #fff;
 }
