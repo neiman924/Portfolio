@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+<body id="home">
+<nav>
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" style="float: left;" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="/#home">Home</a>
+    <a href="/#about">About Me</a>
+    <a href="/#projects">Projects</a>
+    <a href="/#contact">Contact</a>
+    {{#if permission}}
+      <a href="/admin">Admin</a>
+    {{/if}}
+    {{#if logged_in}} 
+      <a href="/logout">logout</a>
+    {{else}}
+      <a href="/login">login</a>
+    {{/if}}
+  </div>
+</div>
+<img class="bg" src="./assets/img/background/background.jpg">
+
+</nav>
+
+<span onclick="openNav()">&#9776; M E N U</span>
+<div style="margin-bottom: 5%;"></div>
+<main>
+  
+
+      {{{ body }}}
+
+
+</main>
+
+
+
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+     
+
+<script>
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  //window.onscroll = function() {scrollFunction()};
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+
+
+  </body>
+</html>
+

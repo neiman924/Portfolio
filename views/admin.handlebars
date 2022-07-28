@@ -1,0 +1,39 @@
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+<link rel="stylesheet" href="/css/jass.css">
+<link rel="stylesheet" href="/css/style.css">
+
+
+<div class="card">
+  <div class="col-md-6">
+
+
+<form class="form usersearch">
+<hr style="width:100%;text-align:left;margin-left:0">
+
+<section class="row justify-center box myclass" id="munthPick">
+<table id="users">
+  <tr>
+    <th>Date Created</th>
+    <th>User Name</th>
+    <th>Email Address</th>
+    <th>Comment</th>
+  </tr>
+<tr>
+{{#each comments as |comment| }}
+      <tr>
+        <td>{{format_date comment.date_created}}</td>
+        <td>{{comment.username}}</td>
+        <td>{{comment.email}}</td>
+        <td>
+          <a href="/userslist/{{comment.id}}">
+            {{comment.comment}}
+          </a>
+        </td>
+    </tr>
+{{/each}}
+</section>
+  </div>
+</div>

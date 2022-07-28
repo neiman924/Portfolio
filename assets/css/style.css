@@ -37,7 +37,7 @@ body {
 
 span{
   display: block;
-  font-size: 30px;
+  font-size: 2vw;
   cursor: pointer;
   color: #7200ff;
   position: fixed;  
@@ -59,21 +59,21 @@ main{
 main h1{
   font-family:'Courier New', Courier, monospace;
   display: inline;
-  font-size: 80px;
+  font-size: 4vw;
   color: #7200ff;  
   text-shadow: 3px 3px 3px #000000;
 }
 main h2{
   font-family: 'Courier New', Courier, monospace;
   display: inline;
-  font-size: 80px;
+  font-size: 4vw;
   color: orange ;
   text-shadow: 3px 3px 3px #010101;
 }
 main h3{
   font-family:'Courier New', Courier, monospace;
   display: inline;
-  font-size: 80px;
+  font-size: 4vw;
   color: #ffffff;  
   text-shadow: 3px 3px 3px #010101;
 }
@@ -93,14 +93,14 @@ main h3{
   top: 25%;
   width: 100%;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 5vw;
   visibility: visible;
 }
 
 .overlay a {
-  padding: 8px;
+  padding: 1vw;
   text-decoration: none;
-  font-size: 36px;
+  font-size: 2vw;
   color: #ffffff;
   display: block;
   transition:cubic-bezier(0.075, 0.82, 0.165, 1);;
@@ -117,7 +117,7 @@ main h3{
 
 .overlay .closebtn{
   position:absolute;
-  font-size: 60px;
+  font-size: 4vw;
   color: #7200ff;
 }
 
@@ -126,19 +126,12 @@ display: flex;
 flex-direction: column;
 }
 
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
-  }
-}
+
 
 .blackbox{
   background-color: rgb(0, 0, 0);
   width: 100%;
-  border: 15px solid rgb(0, 0, 0);
+  border: 1vw solid rgb(0, 0, 0);
 }
 
 .hero-text {
@@ -148,7 +141,7 @@ flex-direction: column;
   display:inline;
 }
 .button-hero.black {
-  padding: 13px 45px;
+  padding: .7vw 1.5vw;
   border-style: solid;
   margin-left: 2%;
   border-width: 2px;
@@ -164,14 +157,14 @@ flex-direction: column;
 }
 .button-hero {
     display: inline-block;
-    padding: 15px 40px;
-    border-radius: 50px;
+    padding: .7vw 1.5vw;
+    border-radius: 2vw;
     background-image: linear-gradient(180deg, #7200ff, #2b0050);
     font-family: 'Courier New', Courier, monospace;
     color: #fff;
-    font-size: 13px;
+    font-size: 100%;
     font-weight: 900;
-    letter-spacing: 2px;
+    letter-spacing: .2vw;
     text-decoration: none;
 }
 
@@ -181,8 +174,8 @@ flex-direction: column;
 }
 .myBtn {
   position:fixed;
-  bottom: 1px;
-  right: 30px;
+  bottom: 1vw;
+  right: 3vw;
   border: none;
   outline: none;
   background-color: black;
@@ -206,7 +199,7 @@ flex-direction: column;
   padding: 7%;
   float: right;
   width: 40%;
-  border: 15px solid rgb(0, 0, 0);
+  border: 1vw solid rgb(0, 0, 0);
   border-radius: 100% 0 0 100%;
   box-shadow: #000000;
 }
@@ -275,8 +268,8 @@ font-size: 300%;
   display: -ms-grid;
   display: grid;
   grid-auto-columns: 1fr;
-  grid-column-gap: 50px;
-  grid-row-gap: 50px;
+  grid-column-gap: 3vw;
+  grid-row-gap: 3vw;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto auto;
@@ -350,13 +343,12 @@ form{
   width: 60%;
 }
 .field-label-form {
-  margin-top: 0px;
-  padding-top: 10px;
+  padding-top: 1vw;
   font-family: 'Open Sans', sans-serif;
-  font-size: 11px;
-  letter-spacing: 3px;
+  font-size: 1vw;
+  letter-spacing: .2vw;
   text-transform: uppercase;
-  height: 38px;
+  height: 5vw;
 }
 
 
@@ -417,4 +409,22 @@ form{
   width: 25%;
   height: 25%;
   background-color:orange;
+}
+
+.ptag{
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  font-size: 5vw;
+  color: orange ;
+  text-shadow: 3px 3px 3px #010101;
+}
+
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
 }
